@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float</title>
+  <style>
+
+    /* ~~~~~~~~~~₩float을 해제하는 여러가지 방법들~~~~~~~~~~₩*/
+    /* clear-fix */
+    .clear-fix::after {
+      display: block;
+      content: '';
+      clear: both;
+      /* ^^left도 가능함 */
+    }
+
+    li {
+      float: left;
+      height: 100px;
+      width: 300px;
+      background: pink;
+    }
+    /* ^^위는 첫번째 방법 */
+
+
+    /* li:nth-child(2) {
+      float: left;
+      width: 100%;
+      background: black;
+    }
+    
+    li:nth-child(3) {
+      clear: left;
+    } */
+
+  /* ^^위는 두번째 방법 */
+
+  </style>
+</head>
+<body>
+  <ul class="clear-fix">
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  
+</body>
+</html>
