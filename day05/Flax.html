@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex 문제</title>
+</head>
+<style>
+  div {
+    width: 50px;
+    height: 50px
+  }
+
+  .blue {
+    display: flex;
+    background: blue
+  }
+
+  .green {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-flow: row-reverse;
+
+    background: green
+  }
+
+  .yellow {
+    background: yellow
+  }
+
+
+  article {
+    background: black;
+    width: 350px;
+    height: 300px;
+  }
+
+
+  .right_side,
+  .center,
+  .left_side {
+    height: 300px;
+  }
+</style>
+
+<body>
+  <article>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="yellow"></div>
+    <!-- <div class="blue"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="yellow"></div> -->
+  </article>
+</body>
+
+</html>
