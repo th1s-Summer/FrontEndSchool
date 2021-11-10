@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>btn_animation</title>
+  <style>
+    button {
+      display: block;
+      margin: 10% auto;
+      width: 300px;
+      height: 200px;
+      background-color: red;
+      border: 20px solid darkred;
+      border-top-left-radius: 60%;
+      border-top-right-radius: 60%;
+      line-height: 100px;
+      color: white;
+      font-weight: 700;
+      font-size: 30px;
+    }
+
+    div {
+      position: relative;
+      bottom: 30px;
+      right: 70px;
+      width: 350px;
+      height: 100px;
+      border: 20px solid darkred;
+      background-color: white;
+    }
+    
+    .btn::after {
+      content: '';
+    }
+
+    /* button:hover {
+      box-shadow: rgba(212, 35, 35, 0.5) 0px 10px 29px 20px;
+    } */
+    
+  
+
+  </style>
+</head>
+<body>
+  <button class="btn">DON'T PUSH
+    <div></div>
+  </button>
+</body>
+</html>
