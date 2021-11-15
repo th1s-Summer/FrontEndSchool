@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-1</title>
+  <style>
+    .container-color{
+      background-color: coral;
+      border: solid 3px black;
+      border-radius: 10px;
+      height: 300px;
+      margin: 5px;
+      padding: 5px;
+    }
+    .item-color {
+      background-color: darkcyan;
+      border: solid 3px black;
+      border-radius: 10px;
+      margin: 5px;
+      padding: 5px;
+    }
+    .container {
+      display: flex;
+    }
+    .container2 {
+      display: flex;
+      justify-content: space-between;
+    }
+    .container3 {
+      display: flex;
+      align-items: stretch;
+        }
+  </style>
+</head>
+<body>
+  display:flex
+  <div class="container-color container1">
+    <div class="item-color item1">Lorem.</div>
+    <div class="item-color item2">Lorem, ipsum.</div>
+    <div class="item-color item3">Lorem, ipsum dolor.</div>
+    <div class="item-color item4">Lorem ipsum dolor sit.</div>
+  </div>
+
+  justify-content:center or space-between
+  <div class="container-color container2">
+    <div class="item-color item1">Lorem.</div>
+    <div class="item-color item2">Lorem, ipsum.</div>
+    <div class="item-color item3">Lorem, ipsum dolor.</div>
+    <div class="item-color item4">Lorem ipsum dolor sit.</div>
+  </div>
+</body>
+</html>
