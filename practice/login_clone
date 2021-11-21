@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>NAVER</title>
+</head>
+<body>
+  <header>
+    <a href="https://www.naver.com/">naver</a>
+    <input type="search" class="search"><button>search</button>
+  </header>
+  <nav>
+    <ul class="nav_group">
+      <li>메일</li>
+      <li>카페</li>
+      <li>블로그</li>
+      <li>지식iN</li>
+      <li>쇼핑</li>
+      <li>쇼핑live</li>
+      <li>Pay</li>
+      <li>TV</li>
+    </ul>
+    <ul class="custom nav_group">
+      <li>사전</li>
+      <li>뉴스</li>
+      <li>증권</li>
+      <li>부동산</li>
+      <li>지도</li>
+      <li>VIBE</li>
+      <li>책</li>
+      <li>웹툰</li>
+    </ul>
+  </nav>
+  <section>
+    <article class="add">
+      <img src="add.png" alt="배너광고">
+    </article>
+  </section>
+  <aside class="login">
+    <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+    <button>NAVER 로그인</button>
+    <a href="">로그인</a>
+    <a href="">비밀번호찾기</a>
+    <a href="">회원가입</a>
+  </aside>
+</body>
+</html>
