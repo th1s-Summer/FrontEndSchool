@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function randomNum(min, max) {
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+
+        // let lottoArr = [];
+        let lottoSet = new Set();
+        function lottoGenerator() {
+
+            while (lottoSet.size < 6) {
+
+                let result = randomNum(1, 46);
+                // let isGot = false;
+                lottoSet.add(result)
+                // //중복판단
+                // lottoArr.forEach(element => {
+                //     if (element === result) {
+                //         isGot = true;
+                //     }
+                // });
+
+                // //중복이 없다면 배열에 추가
+                // if (!isGot) {
+                //     lottoArr.push(result);
+                // }
+
+                // if (!lottoArr.includes(result)) {
+                //     lottoArr.push(result);
+                // }
+                // includes가 있으면 위의 19~31줄까지 사용하지 않아도 되서
+                // 코드가 단순해지는 장점이 있으나! IE지원이 안된다,,,,
+            }
+            return lottoSet;
+        }
+        
+
+        lottoGenerator();
+    </script>
+</body>
+</html>
+<!-- isGot이 true 라면 if(true) 가 되어 {}에 들어갑니다.
+isGot이 false 라면 if(true) 가 되어 {}에 못들어갑니다.
+
+결과적으로 if(isGot) 의 뜻은 if(isGot === true) 과 동일해요 -->
+<!-- array: length, push -->
+<!-- set: size, add -->
