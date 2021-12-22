@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+    <!-- 다각형, 동그라미, 선이 기본 모형 -->
+    <div class="canvas"></div>
+    <script>
+        const canvas = d3.select('.canvas');
+        const svg = canvas
+            .append('svg') //추가
+            .attr('height', 1000) //속성지정
+            .attr('width', 1000);
+
+        svg.append('text') //추가, text 향태로 추가
+            .attr('x', 200)
+            .attr('y', 200) //좌측 상단 기준 좌표
+            .text('hello world')
+            .style('font-weight', 'bold')
+            .style('font-size', '34px')
+
+        svg.append('rect') //추가, 사각형 형태로 추가
+            .attr('x', 10)
+            .attr('y', 10)
+            .attr('width', 200)
+            .attr('height', 200)
+            .attr('fill', 'hotpink')
+
+        svg.append('circle') //추가, 원 형태로 추가
+            .attr('r', 50)
+            .attr('cx', 200) //x축
+            .attr('cy', 200) //y축
+            .attr('fill', 'skyblue')
+
+        svg.append('line')
+            .attr('x1', 200) //x축 시작
+    </script>
+</body>
+
+</html>
